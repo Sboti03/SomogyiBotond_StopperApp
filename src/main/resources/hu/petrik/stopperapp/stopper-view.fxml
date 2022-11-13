@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.HBox?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" fx:controller="hu.petrik.stopperapp.HelloController" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+            <children>
+                <Button fx:id="startStopBtn" mnemonicParsing="false" onAction="#startStopAction" text="Start">
+                    <padding>
+                        <Insets bottom="3.0" left="20.0" right="20.0" top="3.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="resetTimeBtn" mnemonicParsing="false" onAction="#resetTimeAction" text="Reset">
+                    <padding>
+                        <Insets bottom="3.0" left="20.0" right="20.0" top="3.0" />
+                    </padding>
+                </Button>
+            </children>
+            <HBox.margin>
+                <Insets top="20.0" />
+            </HBox.margin>
+        </VBox>
+        <VBox fx:id="timerHbox" alignment="TOP_CENTER" prefHeight="200.0">
+            <children>
+                <Label fx:id="timerLabel" text="00:00.000">
+                    <font>
+                        <Font name="System Bold" size="64.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</HBox>
+
